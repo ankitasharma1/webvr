@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>
+      	WebVR
+      </title>
+
+       <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"> </script>
+       <script>
+		 window.addEventListener('load', onVrViewLoad)
+		 function onVrViewLoad() {
+		   var vrView = new VRView.Player('#vrview', {
+		     image: 'https://storage.googleapis.com/vrview/examples/coral.jpg',
+		     is_stereo: true, width: 857, height: 297
+		   });
+		 }
+		</script>
+   </head>
+
+   <body>
+      <div id='vrview'> </div>
+   </body>
+	
+</html>
